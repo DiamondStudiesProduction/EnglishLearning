@@ -56,8 +56,9 @@ export const Form = () => {
 			return;
 		}
 		if (state.length > 0) {
+			const inputToLowerCase = input.toLowerCase();
 			const foundItem = state[randomWord].find(
-				(item: string) => item === input
+				(item: string) => item === inputToLowerCase
 			);
 			if (foundItem) {
 				setNoRightWordCounter(0);
