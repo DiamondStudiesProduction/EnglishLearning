@@ -37,8 +37,10 @@ export const FormUI = (props: any) => {
 						''
 					) : (
 						<div className={styles.statusContainer}>
-							<p>Неправильно: {props.wrongWord}</p>
-							<p>Правильно: {props.wrongWordSaver}</p>
+							<p className={styles.rightNoP}>Неправильно: {props.wrongWord}</p>
+							<p className={styles.rightNoP}>
+								Правильно: {props.wrongWordSaver}
+							</p>
 						</div>
 					)}
 				</div>
