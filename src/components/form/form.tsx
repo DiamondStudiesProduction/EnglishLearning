@@ -1,10 +1,11 @@
 import { SyntheticEvent, useEffect, useState } from 'react';
 import { massiveOfEnglishWords } from 'src/constants/articleProps';
 import { FormUI } from '../ui/form/form';
-
+import tarkov from '../../images/tarkov.jpg';
 function getRandomInRange(min: number, max: number) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
 export const Form = () => {
 	const [state, setState] = useState(massiveOfEnglishWords);
 	const [count, setCount] = useState(state.length + 1);
@@ -15,7 +16,10 @@ export const Form = () => {
 	const [right, setRigth] = useState(0);
 	const [noRight, setNoRight] = useState(0);
 	const [rightAnserOrNot, setRightAnserOrNot] = useState<null | boolean>(null);
-
+	const form = document.querySelector('form');
+	if (form) {
+		form.style.backgroundImage = `url(${tarkov})`;
+	}
 	const setIntervalFunction = (value: boolean) => {
 		if (value) {
 			setRightAnserOrNot(true);

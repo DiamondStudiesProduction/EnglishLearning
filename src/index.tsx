@@ -6,6 +6,7 @@ import mishaImg from './images/misha.jpg';
 document.addEventListener('DOMContentLoaded', () => {
 	// Ждем загрузки DOM
 	const body = document.querySelector('body');
+	
 	if (body) {
 		body.style.backgroundImage = `url(${mishaImg})`;
 	} else {
