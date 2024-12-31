@@ -84,7 +84,7 @@ module.exports = {
 	},
 	plugins: [
 		new HTMLWebpackPlugins({
-			template: path.resolve(__dirname, '..', './root/index.html'),
+			template: path.resolve(__dirname, '..', './docs/index.html'),
 		}),
 		new CleanWebpackPlugin(),
 		new MiniCssExtractPlugin({
