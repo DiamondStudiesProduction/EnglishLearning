@@ -2,13 +2,13 @@ import { createRoot } from 'react-dom/client';
 import './styles/index.scss';
 import './styles/body.scss';
 import { App } from './components/app/App';
-import girls from './images/girls.jpg';
+import dick from './images/dick.jpg';
 document.addEventListener('DOMContentLoaded', () => {
 	// Ждем загрузки DOM
 	const body = document.querySelector('body');
 
 	if (body) {
-		body.style.backgroundImage = `url(${girls})`;
+		body.style.backgroundImage = `url(${dick})`;
 	} else {
 		console.error('Body element not found!');
 	}
