@@ -15,7 +15,9 @@ export const Form = () => {
 	const [randomLang, setRandomLang] = useState(0);
 	const [right, setRigth] = useState(0);
 	const [noRight, setNoRight] = useState(0);
+	const [noRightWordCounter, setNoRightWordCounter] = useState(0);
 	const [rightAnserOrNot, setRightAnserOrNot] = useState<null | boolean>(null);
+	const [wrongWord, setWrongWord] = useState('');
 	const form = document.querySelector('form');
 	if (form) {
 		form.style.backgroundImage = `url(${tarkov})`;
@@ -58,9 +60,13 @@ export const Form = () => {
 				(item: string) => item === input
 			);
 			if (foundItem) {
+				setNoRightWordCounter(0);
+				setWrongWord('');
 				setIntervalFunction(true);
 				setRigth(right + 1);
 			} else {
+				setNoRightWordCounter(1);
+				setWrongWord(input);
 				setIntervalFunction(false);
 				setNoRight(noRight + 1);
 			}
@@ -81,6 +87,8 @@ export const Form = () => {
 			right={right}
 			noRight={noRight}
 			rightAnserOrNot={rightAnserOrNot}
+			wrongWord={wrongWord}
+			noRightWordCounter={noRightWordCounter}
 		/>
 	);
 };
