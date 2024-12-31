@@ -36,7 +36,10 @@ export const FormUI = (props: any) => {
 					{!props.noRightWordCounter ? (
 						''
 					) : (
-						<p>Неправильное слово: {props.wrongWord}</p>
+						<div className={styles.statusContainer}>
+							<p>Неправильно: {props.wrongWord}</p>
+							<p>Правильное: {props.wrongWordSaver}</p>
+						</div>
 					)}
 				</div>
 			</div>

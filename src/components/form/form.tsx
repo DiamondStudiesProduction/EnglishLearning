@@ -18,6 +18,7 @@ export const Form = () => {
 	const [noRightWordCounter, setNoRightWordCounter] = useState(0);
 	const [rightAnserOrNot, setRightAnserOrNot] = useState<null | boolean>(null);
 	const [wrongWord, setWrongWord] = useState('');
+	const [wrongWordSaver, setWrongWordSaver] = useState<any>(null);
 	const form = document.querySelector('form');
 	if (form) {
 		form.style.backgroundImage = `url(${tarkov})`;
@@ -61,11 +62,14 @@ export const Form = () => {
 				(item: string) => item === inputToLowerCase
 			);
 			if (foundItem) {
+				setWrongWordSaver(null);
 				setNoRightWordCounter(0);
 				setWrongWord('');
 				setIntervalFunction(true);
 				setRigth(right + 1);
 			} else {
+				const wrongWord = `${state[randomWord][0]} - ${state[randomWord][1]}`;
+				setWrongWordSaver(wrongWord);
 				setNoRightWordCounter(1);
 				setWrongWord(input);
 				setIntervalFunction(false);
@@ -90,6 +94,7 @@ export const Form = () => {
 			rightAnserOrNot={rightAnserOrNot}
 			wrongWord={wrongWord}
 			noRightWordCounter={noRightWordCounter}
+			wrongWordSaver={wrongWordSaver}
 		/>
 	);
 };

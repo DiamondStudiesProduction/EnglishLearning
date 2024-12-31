@@ -62,12 +62,12 @@
 		background-image: none;
 		border: 1px solid #000;
 		border-radius: 4px;
-		box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+		box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
 		box-sizing: border-box;
 		color: #fff;
 		cursor: pointer;
 		display: inline-block;
-		font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+		font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 20px;
@@ -83,17 +83,24 @@
 		white-space: nowrap;
 		width: 70%;
 		margin: 10px 0px 25px 0px;
+		letter-spacing: 3px;
 	}
 	.buttonClick:focus {
 		text-decoration: none;
-	  }
-	  
-	  .buttonClick:hover {
+	}
+
+	.buttonClick:hover {
 		text-decoration: none;
-	  }
-	  
-	  .buttonClick:active {
-		box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+	}
+
+	.buttonClick:active {
+		box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
 		outline: 0;
-	  }
+	}
+}
+
+.statusContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
