@@ -1,0 +1,51 @@
+.input{
+  border-radius: 10px;
+  height: 50px;
+  font-size: 25px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.input:focus{
+  outline: none;
+}
+.buttonClick{
+  visibility: hidden;
+}
+
+.form{
+  border: 1px solid black;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.inputActive{
+  background-color: green;
+}
+.isFalse{
+  background-color: red;
+}
+
+.words{
+  font-size: 35px;
+
+}
+
+.rightNo{
+  display: flex;
+  gap: 20px;
+}
+.inputContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rightNoP{
+  font-family: sans-serif;
+}

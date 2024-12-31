@@ -1,0 +1,8 @@
+body{
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    min-height: 100vh; /* Занимает всю высоту viewport */
+    margin: 0; /* Удаление отступов по умолчанию */
+    font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
+}
