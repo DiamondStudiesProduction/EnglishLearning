@@ -5,7 +5,7 @@ export const FormUI = (props: any) => {
 			<div>
 				<p className={styles.words}>{props.word}</p>
 			</div>
-			<div>
+			<div className={styles.inputStatusContainer}>
 				<div className={styles.inputContainer}>
 					<input
 						type='text'

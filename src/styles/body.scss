@@ -1,12 +1,23 @@
 body {
-	display: flex;
-	justify-content: center; /* Центрирование по горизонтали */
-	align-items: center; /* Центрирование по вертикали */
-	min-height: 100vh; /* Занимает всю высоту viewport */
-	margin: 0; /* Удаление отступов по умолчанию */
+	min-height: 100vh;
+	margin: 0;
 	font-family: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
-    color: white;
+	color: white;
 	font-weight: 900;
 }
-
+.snow-container {
+	position: fixed; /* Занимает всю площадь, даже при скролле */
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index: 0; /*Позволит размещать контент поверх*/
+  }
+  
+  #root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	z-index: 1;
+  }
 //background: #000000 url('../../../images//tarkov.jpg') no-repeat center / cover;

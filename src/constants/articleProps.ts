@@ -17,4 +17,9 @@ export const massiveOfEnglishWords = [
 	['chin', 'подбородок'],
 	['ear', 'ухо'],
 	['elbow', 'локоть'],
+	['eyebrow','бровь'],
+	['eyelash','ресница'],
+	['fist','кулак'],
+	['foot','ступня'],
+	['forehead','лоб'],
 ];
