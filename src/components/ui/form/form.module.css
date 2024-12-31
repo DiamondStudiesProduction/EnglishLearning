@@ -4,7 +4,8 @@
 	font-size: 25px;
 	font-family: sans-serif;
 	letter-spacing: 1px;
-	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+		rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 	background: transparent;
 	color: white;
 	font-weight: 900;
@@ -41,6 +42,7 @@
 
 .words {
 	font-size: 35px;
+	text-shadow: -1px -1px 0 hsl(0, 0%, 100%), -2px -2px 1px hsl(80, 70%, 35%);
 }
 
 .rightNo {
