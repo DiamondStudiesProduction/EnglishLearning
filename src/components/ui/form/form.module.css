@@ -5,6 +5,8 @@
 	font-family: sans-serif;
 	letter-spacing: 1px;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	background-color: black;
+	color: white;
 }
 .input:focus {
 	outline: none;
@@ -22,7 +24,10 @@
 	gap: 20px;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	background-color: white;
-	border-radius: 5px;
+	letter-spacing: 0.2em;
+	border: 1px solid;
+	border-image: linear-gradient(20deg, #f92056 38%, #00deff 65%);
+	border-image-slice: 1;
 	background: #000000 no-repeat center / cover;
 }
 
@@ -58,13 +63,13 @@
 	font-family: 'Rubik One', sans-serif;
 	font-size: 50px;
 	text-transform: uppercase;
-	background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+	background: linear-gradient(45deg, #0b2349 33%, #0d61bc 66%, #8aa9d6);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	color: #0B2349;
+	color: #0b2349;
 	display: table;
 	margin: 20px auto;
-  }
+}
 
 @media (max-width: 600px) {
 	.buttonClick {
