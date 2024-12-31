@@ -83,7 +83,7 @@
 	margin: 20px auto;
 }
 
-.inputStatusContainer{
+.inputStatusContainer {
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
@@ -93,13 +93,14 @@
 	.buttonClick {
 		visibility: visible;
 		appearance: button;
-		background-color: #000;
-		background-image: none;
+		background: transparent;
 		border: 1px solid #000;
 		border-radius: 4px;
-		box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+		border: 1px solid;
+		border-image: linear-gradient(20deg, #f92056 38%, #00deff 65%);
+		border-image-slice: 1;
 		box-sizing: border-box;
-		color: #fff;
+		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
 		font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
@@ -136,7 +137,7 @@
 	.rightNo {
 		flex-direction: column;
 	}
-	.form{
+	.form {
 		height: 100%;
 	}
 }
@@ -146,4 +147,3 @@
 	flex-direction: column;
 	gap: 10px;
 }
-
