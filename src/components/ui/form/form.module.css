@@ -114,6 +114,10 @@
 		box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
 		outline: 0;
 	}
+
+	.rightNo{
+		flex-direction: column;
+	}
 }
 
 .statusContainer {
