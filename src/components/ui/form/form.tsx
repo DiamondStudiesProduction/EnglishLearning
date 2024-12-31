@@ -31,6 +31,9 @@ export const FormUI = (props: any) => {
 					<p className={styles.rightNoP}>Неправильно: {props.noRight}</p>
 					<p className={styles.rightNoP}>осталось слов: {props.count}</p>
 				</div>
+				<div>
+					<h2 className={styles.gradientText}>салат оливье</h2>
+				</div>
 
 				<div className={styles.noRightWordCounterContainer}>
 					{!props.noRightWordCounter ? (
