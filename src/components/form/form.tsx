@@ -46,6 +46,9 @@ export const Form = () => {
 
 	const buttonClick = (e: SyntheticEvent) => {
 		e.preventDefault();
+		if (input === '') {
+			return;
+		}
 		if (state.length > 0) {
 			const foundItem = state[randomWord].find(
 				(item: string) => item === input
