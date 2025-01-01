@@ -1,7 +1,7 @@
 import styles from './form.module.css';
 export const FormUI = (props: any) => {
 	return (
-		<form className={styles.form}>
+		<form className={styles.form} name='check-form'>
 				<p className={styles.words}>{props.word}</p>
 			<div className={styles.inputStatusContainer}>
 				<div className={styles.inputContainer}>
