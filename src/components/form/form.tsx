@@ -53,9 +53,7 @@ export const Form = () => {
 
 	const buttonClick = (e: SyntheticEvent) => {
 		e.preventDefault();
-		if (input === '') {
-			return;
-		}
+		if (input === '') return;
 		if (state.length > 0) {
 			const inputToLowerCase = input.toLowerCase();
 			const inputTrim = inputToLowerCase.trim();
