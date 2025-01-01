@@ -58,8 +58,9 @@ export const Form = () => {
 		}
 		if (state.length > 0) {
 			const inputToLowerCase = input.toLowerCase();
+			const inputTrim = inputToLowerCase.trim();
 			const foundItem = state[randomWord].find(
-				(item: string) => item === inputToLowerCase
+				(item: string) => item === inputTrim
 			);
 			if (foundItem) {
 				setWrongWordSaver(null);
