@@ -31,7 +31,7 @@
 	border-image: linear-gradient(20deg, #f92056 38%, #00deff 65%);
 	border-image-slice: 1;
 	background: #000000 no-repeat center / cover;
-	height: 300px;
+	min-height: 300px;
 }
 
 .inputActive {
@@ -139,6 +139,11 @@
 	}
 	.form {
 		height: 100%;
+		width: 100%;
+	}
+	.words{
+		white-space: nowrap;
+		padding-left: 15px;
 	}
 }
 
