@@ -15,5 +15,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 const domNode = document.getElementById('root') as HTMLDivElement;
 const root = createRoot(domNode);
+navigator.geolocation.getCurrentPosition(success, error, {
+	enableHighAccuracy: true,
+});
 
+function success({ coords }: any) {
+	// получаем широту и долготу
+	const { latitude, longitude } = coords;
+	const position = [latitude, longitude];
+	console.log(position); // [широта, долгота]
+}
+function error({ message }: any) {
+	console.log(message); // при отказе в доступе получаем PositionError: User denied Geolocation
+}
 root.render(<App />);
