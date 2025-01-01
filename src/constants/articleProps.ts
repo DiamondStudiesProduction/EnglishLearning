@@ -28,6 +28,8 @@ export const massiveOfEnglishWords = [
 	['jaw','челюсть'],
 	['kidney','почка'],
 	['knee','колено'],
+	['along','вдоль'],
+	['around','вокруг'],
 ];
 /*
 	['',''],
