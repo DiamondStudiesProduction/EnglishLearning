@@ -3,6 +3,7 @@ import './styles/index.scss';
 import './styles/body.scss';
 import { App } from './components/app/App';
 import girls from './images/girls.jpg';
+import { useState } from 'react';
 document.addEventListener('DOMContentLoaded', () => {
 	// Ждем загрузки DOM
 	const body = document.querySelector('body');

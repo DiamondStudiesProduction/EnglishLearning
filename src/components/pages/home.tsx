@@ -1,5 +1,15 @@
-import { Form } from "../form/form";
+import { Form } from '../form/form';
+import { Coordinates } from '../coordinates/coordinates';
 
 export const Home = () => {
-	return <Form />;
+	return (
+		<>
+			<Form />
+			<div>
+				<h1>
+					<Coordinates />
+				</h1>
+			</div>
+		</>
+	);
 };

@@ -19,7 +19,9 @@ export const Form = () => {
 	const [rightAnserOrNot, setRightAnserOrNot] = useState<null | boolean>(null);
 	const [wrongWord, setWrongWord] = useState('');
 	const [wrongWordSaver, setWrongWordSaver] = useState<any>(null);
+
 	const form = document.querySelector('form');
+
 	if (form) {
 		form.style.backgroundImage = `url(${tarkov})`;
 	}
