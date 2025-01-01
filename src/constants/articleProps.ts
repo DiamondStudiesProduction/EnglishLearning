@@ -22,11 +22,13 @@ export const massiveOfEnglishWords = [
 	['fist','кулак'],
 	['foot','ступня'],
 	['forehead','лоб'],
+	['hand','кисть руки'],
+	['heel','пятка'],
+	['hip','бедро'],
+	['jaw','челюсть'],
+	['kidney','почка'],
+	['knee','колено'],
 ];
 /*
-	['eyebrow','бровь'],
-	['eyelash','ресница'],
-	['fist','кулак'],
-	['foot','ступня'],
-	['forehead','лоб'],
+	['',''],
 */
