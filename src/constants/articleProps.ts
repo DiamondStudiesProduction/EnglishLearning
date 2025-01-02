@@ -30,6 +30,13 @@ export const massiveOfEnglishWords = [
 	['knee','колено'],
 	['along','вдоль'],
 	['around','вокруг'],
+	['little finger','мизинец'],
+	['liver','печень'],
+	['lung','легкое'],
+	['mouth','рот'],
+	['nail','ноготь'],
+	['neck','шея'],
+	['nerve','нерв'],
 ];
 /*
 	['',''],
