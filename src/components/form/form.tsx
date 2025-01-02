@@ -23,7 +23,7 @@ export const Form = () => {
 	const form = document.querySelector('form');
 
 	if (form) {
-		form.style.backgroundImage = `url(${tarkov})`;
+		form.style.backgroundImage = `url("https://avatars.mds.yandex.net/i?id=b8d19985f85b859e9dc9ecf521ae68c1_l-8497167-images-thumbs&n=13")`;
 	}
 	const setIntervalFunction = (value: boolean) => {
 		if (value) {
