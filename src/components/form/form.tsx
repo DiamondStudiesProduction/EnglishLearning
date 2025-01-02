@@ -23,7 +23,7 @@ export const Form = () => {
 	const form = document.querySelector('form');
 
 	if (form) {
-		form.style.backgroundImage = `url("https://bogatyr.club/uploads/posts/2023-03/thumbs/1679604012_bogatyr-club-p-melovaya-chernaya-doska-fon-pinterest-7.jpg")`;
+		form.style.backgroundImage = `url("https://c.wallhere.com/photos/1e/b8/minimalism-201373.jpg!d")`;
 	}
 	const setIntervalFunction = (value: boolean) => {
 		if (value) {
