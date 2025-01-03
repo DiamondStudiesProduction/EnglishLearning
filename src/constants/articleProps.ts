@@ -29,6 +29,12 @@ export const massiveOfEnglishWords = [
 	['nail', 'ноготь'],
 	['neck', 'шея'],
 	['nerve', 'нерв'],
+	['palm','ладонь'],
+	['rib','ребро'],
+	['ring finger','безымянный палец'],
+	['skeleton','скелет'],
+	['skull','череп'],
+	['stomach','желудок'],
 ];
 /*
 	['',''],
