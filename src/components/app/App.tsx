@@ -11,7 +11,7 @@ export const App = () => {
 					href={flags}
 				/>
 			</Helmet>
-			<Home />;
+			<Home />
 		</>
 	);
 };
