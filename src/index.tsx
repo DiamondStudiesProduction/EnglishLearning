@@ -4,7 +4,8 @@ import './styles/body.scss';
 import { App } from './components/app/App';
 import girls from './images/girls.jpg';
 import background from './images/background.jpg';
-import { useState } from 'react';
+import { StrictMode } from 'react';
+import { HelmetProvider } from 'react-helmet-async';
 document.addEventListener('DOMContentLoaded', () => {
 	// Ждем загрузки DOM
 	const body = document.querySelector('body');
@@ -18,4 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
 const domNode = document.getElementById('root') as HTMLDivElement;
 const root = createRoot(domNode);
 
-root.render(<App />);
+root.render(
+	<StrictMode>
+		<HelmetProvider>
+			<App />
+		</HelmetProvider>
+	</StrictMode>
+);
