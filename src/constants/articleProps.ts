@@ -40,7 +40,7 @@ export const massiveOfEnglishWords = [
 	['attractive','привлекательный'],
 	['bald','лысый'],
 	['beard','борода'],
-	['bushy','кудрявый'],
+	['bushy','густой'],
 	['common','обычный'],
 ];
 /*
