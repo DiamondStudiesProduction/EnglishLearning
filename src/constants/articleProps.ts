@@ -35,6 +35,13 @@ export const massiveOfEnglishWords = [
 	['tongue', 'язык'],
 	['tooth', 'зуб'],
 	['wrist', 'запястье'],
+	['to breathe','дышать'],
+	['to hold','держать'],
+	['attractive','привлекательный'],
+	['bald','лысый'],
+	['beard','борода'],
+	['bushy','кудрявый'],
+	['common','обычный'],
 ];
 /*
 	['',''],

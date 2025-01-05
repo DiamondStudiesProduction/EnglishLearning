@@ -1,4 +1,4 @@
-import { SyntheticEvent, useEffect, useState } from 'react';
+import { SyntheticEvent, useEffect, useRef, useState } from 'react';
 import { massiveOfEnglishWords } from 'src/constants/articleProps';
 import { FormUI } from '../ui/form/form';
 import tarkov from '../../images/tarkov.jpg';
@@ -21,7 +21,7 @@ export const Form = () => {
 	const [wrongWordSaver, setWrongWordSaver] = useState<any>(null);
 
 	const form = document.querySelector('form');
-
+	const refInput = useRef<any>();
 	if (form) {
 		form.style.backgroundImage = `url("https://c.wallhere.com/photos/1e/b8/minimalism-201373.jpg!d")`;
 	}
@@ -96,6 +96,7 @@ export const Form = () => {
 			wrongWord={wrongWord}
 			noRightWordCounter={noRightWordCounter}
 			wrongWordSaver={wrongWordSaver}
+			refInput={refInput}
 		/>
 	);
 };

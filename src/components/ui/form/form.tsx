@@ -1,12 +1,14 @@
+import { forwardRef } from 'react';
 import styles from './form.module.css';
-export const FormUI = (props: any) => {
+export const FormUI = forwardRef((props: any, refInput: any) => {
 	return (
 		<form className={styles.form} name='check-form'>
-				<p className={styles.words}>{props.word}</p>
+			<p className={styles.words}>{props.word}</p>
 			<div className={styles.inputStatusContainer}>
 				<div className={styles.inputContainer}>
 					<input
 						type='text'
+						ref={refInput}
 						autoFocus
 						className={`${styles.input} ${
 							props.rightAnserOrNot === true
@@ -45,4 +47,4 @@ export const FormUI = (props: any) => {
 			</div>
 		</form>
 	);
-};
+});
