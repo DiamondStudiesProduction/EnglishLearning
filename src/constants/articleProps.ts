@@ -48,6 +48,12 @@ export const massiveOfEnglishWords = [
 	['ginger','рыжий'],
 	['haircut','прическа'],
 	['freckles','веснушки'],
+	['slim','стройный'],
+	['square','квадратный'],
+	['straight','прямой'],
+	['tall','высокий'],
+	['thin','худой'],
+	['wavy','волнистый'],
 ];
 /*
 	['',''],
