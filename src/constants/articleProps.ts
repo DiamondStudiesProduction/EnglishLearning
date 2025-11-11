@@ -37,7 +37,6 @@ export const massiveOfEnglishWords = [
 	['easy-going','легкий на подъем'],
 	['emotional','эмоциональный'],
 	['excited','взволнованный'],
-	['fair','честный'],
 	['generous','щедрый'],
 	['gentle','нежный'],
 	['glad','довольный'],
