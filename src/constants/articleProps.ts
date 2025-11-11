@@ -1,5 +1,5 @@
 export const massiveOfEnglishWords = [
-		['adult', 'взрослый'],
+	['adult', 'взрослый'],
 	['childhood', 'детство'],
 	['personality', 'личность'],
 	['teenager', 'подросток'],

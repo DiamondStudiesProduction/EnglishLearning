@@ -19,6 +19,7 @@ export const Form = () => {
 	const [rightAnserOrNot, setRightAnserOrNot] = useState<null | boolean>(null);
 	const [wrongWord, setWrongWord] = useState('');
 	const [wrongWordSaver, setWrongWordSaver] = useState<any>(null);
+	const [grade, setGrade] = useState('');
 
 	const form = document.querySelector('form');
 	const refInput = useRef<any>();
@@ -48,14 +49,42 @@ export const Form = () => {
 		}
 	};
 
+	const gradeDef = () => {
+		if (state.length == 0) {
+			const procent = (noRight / massiveOfEnglishWords.length) * 100;
+			console.log(`Процент ошибок (${procent}%)`);
+			if (procent == 0) {
+				setGrade('A');
+			} else if (procent <= 10) {
+				setGrade('A-');
+			} else if (procent <= 15) {
+				setGrade('B');
+			} else if (procent <= 17) {
+				setGrade('B-');
+			} else if (procent <= 19) {
+				setGrade('С');
+			} else if (procent <= 21) {
+				setGrade('C-');
+			} else if (procent <= 23) {
+				setGrade('D');
+			} else if (procent <= 25) {
+				setGrade('D-');
+			} else {
+				setGrade('F');
+			}
+		}
+	};
+
 	useEffect(() => {
 		updateWord();
 		setCount(count - 1);
+		gradeDef();
 	}, [state]);
 
 	const buttonClick = (e: SyntheticEvent) => {
 		e.preventDefault();
 		if (input === '') return;
+
 		if (state.length > 0) {
 			const inputToLowerCase = input.toLowerCase();
 			const inputTrim = inputToLowerCase.trim();
@@ -80,6 +109,7 @@ export const Form = () => {
 			const newState = state.filter((item: any) => item !== wordToRemove);
 			setState(newState);
 		}
+
 		setInput('');
 	};
 
@@ -97,6 +127,7 @@ export const Form = () => {
 			noRightWordCounter={noRightWordCounter}
 			wrongWordSaver={wrongWordSaver}
 			refInput={refInput}
+			grade={grade}
 		/>
 	);
 };

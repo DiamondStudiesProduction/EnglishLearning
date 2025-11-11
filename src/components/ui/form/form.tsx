@@ -3,6 +3,12 @@ import styles from './form.module.css';
 export const FormUI = forwardRef((props: any, refInput: any) => {
 	return (
 		<form className={styles.form} name='check-form'>
+			<span
+				className={`${styles.grade} ${
+					props.grade === '' ? '' : styles.gradeShow
+				}`}>
+				{props.grade}
+			</span>
 			<p className={styles.words}>{props.word}</p>
 			<div className={styles.inputStatusContainer}>
 				<div className={styles.inputContainer}>
