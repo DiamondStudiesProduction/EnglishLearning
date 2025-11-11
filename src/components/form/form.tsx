@@ -55,19 +55,19 @@ export const Form = () => {
 			console.log(`Процент ошибок (${procent}%)`);
 			if (procent == 0) {
 				setGrade('A');
-			} else if (procent <= 10) {
+			} else if (procent <= 5) {
 				setGrade('A-');
-			} else if (procent <= 15) {
+			} else if (procent <= 7) {
 				setGrade('B');
-			} else if (procent <= 17) {
+			} else if (procent <= 9) {
 				setGrade('B-');
-			} else if (procent <= 19) {
+			} else if (procent <= 11) {
 				setGrade('С');
-			} else if (procent <= 21) {
+			} else if (procent <= 13) {
 				setGrade('C-');
-			} else if (procent <= 23) {
+			} else if (procent <= 15) {
 				setGrade('D');
-			} else if (procent <= 25) {
+			} else if (procent <= 18) {
 				setGrade('D-');
 			} else {
 				setGrade('F');
