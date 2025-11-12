@@ -13,9 +13,6 @@
 .input:focus {
 	outline: none;
 }
-.buttonClick {
-	visibility: hidden;
-}
 
 .form {
 	position: relative;
@@ -56,6 +53,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 1em;
 }
 .rightNoP {
 	font-family: sans-serif;
@@ -108,38 +106,42 @@
 	display: block;
 }
 
+.buttonClick {
+	display: none;
+	appearance: button;
+	background: transparent;
+	border: 1px solid #000;
+	border-radius: 4px;
+	border: 1px solid;
+	border-image: linear-gradient(20deg, #f92056 38%, #00deff 65%);
+	border-image-slice: 1;
+	box-sizing: border-box;
+	color: #ffffff;
+	cursor: pointer;
+	font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	margin: 0 5px 10px 0;
+	overflow: visible;
+	padding: 12px 40px;
+	text-align: center;
+	text-transform: none;
+	touch-action: manipulation;
+	user-select: none;
+	-webkit-user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	width: 70%;
+	margin: 10px 0px 25px 0px;
+	letter-spacing: 3px;
+}
+
+.buttonClickShow {
+	display: inline-block;
+}
+
 @media (max-width: 600px) {
-	.buttonClick {
-		visibility: visible;
-		appearance: button;
-		background: transparent;
-		border: 1px solid #000;
-		border-radius: 4px;
-		border: 1px solid;
-		border-image: linear-gradient(20deg, #f92056 38%, #00deff 65%);
-		border-image-slice: 1;
-		box-sizing: border-box;
-		color: #ffffff;
-		cursor: pointer;
-		display: inline-block;
-		font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
-		font-size: 14px;
-		font-weight: 400;
-		line-height: 20px;
-		margin: 0 5px 10px 0;
-		overflow: visible;
-		padding: 12px 40px;
-		text-align: center;
-		text-transform: none;
-		touch-action: manipulation;
-		user-select: none;
-		-webkit-user-select: none;
-		vertical-align: middle;
-		white-space: nowrap;
-		width: 70%;
-		margin: 10px 0px 25px 0px;
-		letter-spacing: 3px;
-	}
 	.buttonClick:focus {
 		text-decoration: none;
 	}
@@ -151,6 +153,10 @@
 	.buttonClick:active {
 		box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
 		outline: 0;
+	}
+
+	.buttonClickShowMobile {
+		display: inline-block;
 	}
 
 	.rightNo {

@@ -16,6 +16,7 @@ export const FormUI = forwardRef((props: any, refInput: any) => {
 						type='text'
 						ref={refInput}
 						autoFocus
+						disabled={props.state.length === 0 ? true : false}
 						className={`${styles.input} ${
 							props.rightAnserOrNot === true
 								? styles.inputActive
@@ -27,8 +28,17 @@ export const FormUI = forwardRef((props: any, refInput: any) => {
 							props.setInput(e.target.value);
 						}}
 						value={props.input}></input>
-					<button onClick={props.buttonClick} className={styles.buttonClick}>
+					<button
+						onClick={props.buttonClick}
+						className={`${styles.buttonClick} ${styles.buttonClickShowMobile}`}>
 						Проверить
+					</button>
+					<button
+						onClick={props.triggerFormReset}
+						className={`${styles.buttonClick} ${
+							props.state == 0 ? styles.buttonClickShow : ''
+						}`}>
+						Заново
 					</button>
 				</div>
 

@@ -26,6 +26,7 @@ export const Form = () => {
 	if (form) {
 		form.style.backgroundImage = `url("https://c.wallhere.com/photos/1e/b8/minimalism-201373.jpg!d")`;
 	}
+
 	const setIntervalFunction = (value: boolean) => {
 		if (value) {
 			setRightAnserOrNot(true);
@@ -54,25 +55,41 @@ export const Form = () => {
 			const procent = (noRight / massiveOfEnglishWords.length) * 100;
 			console.log(`Процент ошибок (${procent}%)`);
 			if (procent == 0) {
+				setGrade('A+');
+			} else if (procent <= 1) {
 				setGrade('A');
-			} else if (procent <= 5) {
-				setGrade('A-');
-			} else if (procent <= 7) {
+			} else if (procent <= 2) {
 				setGrade('B');
-			} else if (procent <= 9) {
-				setGrade('B-');
-			} else if (procent <= 11) {
-				setGrade('С');
-			} else if (procent <= 13) {
-				setGrade('C-');
-			} else if (procent <= 15) {
+			} else if (procent <= 3) {
+				setGrade('C');
+			} else if (procent <= 4) {
 				setGrade('D');
-			} else if (procent <= 18) {
-				setGrade('D-');
 			} else {
 				setGrade('F');
 			}
 		}
+	};
+
+	const resetStates = () => {
+		setState(massiveOfEnglishWords);
+		console.log(state);
+		setCount(massiveOfEnglishWords.length + 1);
+		setInput('');
+		setWord('');
+		setRandomWord(0);
+		setRandomLang(0);
+		setRigth(0);
+		setNoRight(0);
+		setNoRightWordCounter(0);
+		setRightAnserOrNot(null);
+		setWrongWord('');
+		setWrongWordSaver(null);
+		setGrade('');
+	};
+
+	const triggerFormReset = (e: SyntheticEvent) => {
+		e.preventDefault();
+		resetStates();
 	};
 
 	useEffect(() => {
@@ -128,6 +145,8 @@ export const Form = () => {
 			wrongWordSaver={wrongWordSaver}
 			refInput={refInput}
 			grade={grade}
+			state={state}
+			triggerFormReset={triggerFormReset}
 		/>
 	);
 };
