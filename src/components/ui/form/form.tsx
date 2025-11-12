@@ -3,6 +3,7 @@ import styles from './form.module.css';
 export const FormUI = forwardRef((props: any, refInput: any) => {
 	return (
 		<form className={styles.form} name='check-form'>
+			<span>{props.grade === 'F' ? 'Бездарность ебаная' : ''}</span>
 			<span
 				className={`${styles.grade} ${
 					props.grade === '' ? '' : styles.gradeShow
