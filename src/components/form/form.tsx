@@ -126,7 +126,6 @@ export const Form = () => {
 			const newState = state.filter((item: any) => item !== wordToRemove);
 			setState(newState);
 		}
-
 		setInput('');
 	};
 
