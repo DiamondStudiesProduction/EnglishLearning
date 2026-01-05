@@ -83,7 +83,7 @@ export const massiveOfEnglishWords = [
 	['kind','добрый'],
 	['loyal','верный'],
 	['moody','хмурый'],
-	['nervous','нервный'],
+	
 ];
 /*
 	['',''],
@@ -186,4 +186,12 @@ export const massiveOfEnglishWords = [
 	['generous', 'щедрый'],
 	['gentle', 'нежный'],
 	['glad', 'довольный'],
+	['hard-working','трудолюбивый'],
+	['honest','честный'],
+	['intelligent','умный'],
+	['jealous','ревнивый'],
+	['kind','добрый'],
+	['loyal','верный'],
+	['moody','хмурый'],
+	['nervous','нервный'],
 */
