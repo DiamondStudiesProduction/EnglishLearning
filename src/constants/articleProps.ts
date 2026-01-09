@@ -45,7 +45,6 @@ export const massiveOfEnglishWords = [
 	['generous', 'щедрый'],
 	['gentle', 'нежный'],
 	['glad', 'довольный'],
-	['hard-working','трудолюбивый'],
 	['intelligent','умный'],
 	['jealous','ревнивый'],
 	['loyal','верный'],
