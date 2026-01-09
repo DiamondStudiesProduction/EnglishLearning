@@ -61,6 +61,10 @@ export const massiveOfEnglishWords = [
 	['cousin','кузен'],
 	['daughter-in-law','сноха'],
 	['divorce','развод'],
+	['patient','терпеливый'],
+	['proud','гордый'],
+	['reliable','надежный'],
+	['quiet','тихий'],
 	
 ];
 /*
