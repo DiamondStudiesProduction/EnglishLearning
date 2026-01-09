@@ -58,7 +58,7 @@ export const massiveOfEnglishWords = [
 	['aunt','тетя'],
 	['bride','невеста'],
 	['brother-in-law','шурин'],
-	['cousin','кузин'],
+	['cousin','кузен'],
 	['daughter-in-law','сноха'],
 	['divorce','развод'],
 	
@@ -181,7 +181,11 @@ export const massiveOfEnglishWords = [
 	['aunt','тетя'],
 	['bride','невеста'],
 	['brother-in-law','шурин'],
-	['cousin','кузин'],
+	['cousin','кузен'],
 	['daughter-in-law','сноха'],
 	['divorce','развод'],
+	['patient','терпеливый'],
+	['proud','гордый'],
+	['reliable','надежный'],
+	['quiet','тихий'],
 */
