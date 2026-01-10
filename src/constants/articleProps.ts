@@ -65,7 +65,13 @@ export const massiveOfEnglishWords = [
 	['proud','гордый'],
 	['reliable','надежный'],
 	['quiet','тихий'],
-	
+	['greedy','жадный'],
+	['godfather','крестный отец'],
+	['godmother','крестная мать'],
+	['grandchildren','внуки'],
+	['granddauther','внучка сучка'],
+	['grandparents','бабушка и дедушка'],
+	['grandson','внук']
 ];
 /*
 	['',''],
@@ -167,6 +173,7 @@ export const massiveOfEnglishWords = [
 	['excited', 'взволнованный'],
 	['generous', 'щедрый'],
 	['gentle', 'нежный'],
+	['greedy','жадный'],
 	['glad', 'довольный'],
 	['hard-working','трудолюбивый'],
 	['honest','честный'],
@@ -192,4 +199,10 @@ export const massiveOfEnglishWords = [
 	['proud','гордый'],
 	['reliable','надежный'],
 	['quiet','тихий'],
+	['godfather','крестный отец'],
+	['godmother','крестная мать'],
+	['grandchildren','внуки'],
+	['granddauther','внучка сучка'],
+	['grandparents','бабушка и дедушка'],
+	['grandson','внук'],
 */
