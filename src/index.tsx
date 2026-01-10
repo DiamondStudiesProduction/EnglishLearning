@@ -4,6 +4,7 @@ import './styles/body.scss';
 import { App } from './components/app/App';
 import girls from './images/girls.jpg';
 import background from './images/background.jpg';
+import fight from './images/fight.jpg';
 import { StrictMode } from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 document.addEventListener('DOMContentLoaded', () => {
@@ -11,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const body = document.querySelector('body');
 
 	if (body) {
-		body.style.backgroundImage = `url(${background})`;
+		body.style.backgroundImage = `url(${fight})`;
 	} else {
 		console.error('Body element not found!');
 	}

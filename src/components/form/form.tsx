@@ -23,9 +23,12 @@ export const Form = () => {
 
 	const form = document.querySelector('form');
 	const refInput = useRef<any>();
+
+	/*
 	if (form) {
 		form.style.backgroundImage = `url("https://c.wallhere.com/photos/1e/b8/minimalism-201373.jpg!d")`;
 	}
+*/
 
 	const setIntervalFunction = (value: boolean) => {
 		if (value) {

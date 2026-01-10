@@ -16,6 +16,18 @@
 
 .form {
 	position: relative;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+	letter-spacing: 0.2em;
+	min-height: 300px;
+}
+
+/*
+.form {
+	position: relative;
 	border: 1px solid black;
 	padding: 50px;
 	display: flex;
@@ -31,7 +43,7 @@
 	background: #000000 no-repeat center / cover;
 	min-height: 300px;
 }
-
+*/
 .inputActive {
 	background-color: green;
 }
@@ -58,6 +70,18 @@
 	font-family: sans-serif;
 	background: linear-gradient(135deg, #12bcb0 20%, #fabe0e 70%);
 	-webkit-background-clip: text;
+	display: inline-block;
+	padding: 0.3em 0.6em;
+	border: 3px solid transparent;
+	border-image: linear-gradient(135deg, #12bcb0 20%, #fabe0e 70%);
+	border-image-slice: 1;
+}
+
+/*
+.rightNoP {
+	font-family: sans-serif;
+	background: linear-gradient(135deg, #12bcb0 20%, #fabe0e 70%);
+	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	display: inline-block;
 	padding: 0.3em 0.6em;
@@ -65,6 +89,7 @@
 	border-image: linear-gradient(135deg, #12bcb0 20%, #fabe0e 70%);
 	border-image-slice: 1;
 }
+*/
 
 .noRightWordCounterContainer {
 	margin-top: 10px;
