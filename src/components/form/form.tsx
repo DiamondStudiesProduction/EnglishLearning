@@ -11,6 +11,9 @@ export const Form = () => {
 	const [count, setCount] = useState(state.length + 1);
 	const [input, setInput] = useState('');
 	const [word, setWord] = useState('');
+	const [wordDescription, setwordDescription] = useState<string | undefined>(
+		''
+	);
 	const [randomWord, setRandomWord] = useState(0);
 	const [randomLang, setRandomLang] = useState(0);
 	const [right, setRigth] = useState(0);
@@ -48,6 +51,7 @@ export const Form = () => {
 			setRandomWord(newRandomWord);
 			setRandomLang(getRandomInRange(0, 1));
 			setWord(state[newRandomWord][randomLang]);
+			setwordDescription(state[newRandomWord][2]);
 		} else {
 			setWord('');
 		}
@@ -117,6 +121,7 @@ export const Form = () => {
 				setWrongWord('');
 				setIntervalFunction(true);
 				setRigth(right + 1);
+				setwordDescription(undefined);
 			} else {
 				const wrongWord = `${state[randomWord][0]} - ${state[randomWord][1]}`;
 				setWrongWordSaver(wrongWord);
@@ -124,6 +129,7 @@ export const Form = () => {
 				setWrongWord(input);
 				setIntervalFunction(false);
 				setNoRight(noRight + 1);
+				setwordDescription(undefined);
 			}
 			const wordToRemove = state[randomWord];
 			const newState = state.filter((item: any) => item !== wordToRemove);
@@ -149,6 +155,7 @@ export const Form = () => {
 			grade={grade}
 			state={state}
 			triggerFormReset={triggerFormReset}
+			wordDescription={wordDescription}
 		/>
 	);
 };

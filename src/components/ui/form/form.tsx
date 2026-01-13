@@ -11,6 +11,11 @@ export const FormUI = forwardRef((props: any, refInput: any) => {
 				{props.grade}
 			</span>
 			<p className={styles.words}>{props.word}</p>
+			{props.wordDescription != undefined ? (
+				<span className={styles.wordDescription}>{props.wordDescription}</span>
+			) : (
+				''
+			)}
 			<div className={styles.inputStatusContainer}>
 				<div className={styles.inputContainer}>
 					<input
