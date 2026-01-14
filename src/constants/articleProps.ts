@@ -46,6 +46,10 @@ export const massiveOfEnglishWords = [
 	['bracelet','браслет'],
 	['cap','кепка'],
 	['engagement','помолвка'],
+	['chain','цепь'],
+	['cloak','плащ'],
+	['clothes','одежда'],
+	['coat','пальто'],
 ];
 /*
 	['',''],
